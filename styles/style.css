@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+body {
+}
 
 header {
   font-size: 35px;
@@ -10,15 +12,45 @@ header {
 }
 
 .main-container {
-  border: 2px solid green;
+  position: absolute;
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
-  flex-direction: row;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  border-radius: 30% 70%;
+}
+
+.name-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cell-number {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.email {
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 0.5rem;
 }
 
 .profile {
   display: block;
   width: auto;
   height: auto;
-  border: 2px solid black;
+  text-align: center;
+  margin: 1.5rem;
 }
