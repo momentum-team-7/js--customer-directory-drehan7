@@ -1,3 +1,4 @@
+// initializing main container variable
 const mainContainer = document.querySelector(".main-container");
 
 
@@ -13,7 +14,9 @@ for (let i = 0; i < customers.length; i++) {
 // Function that creates a new div and populates it with customer data
 // takes in an index that correlates to position in object i.e. customers[i]
 function makeAndFillDiv(i) {
+    // makes a new div element every time function is ran. Each profile has its own div that its stored in
     let newDiv = document.createElement("div");
+    // set class name to new div element
     newDiv.className = "profile"
 
     let profilePic = document.createElement("img")
