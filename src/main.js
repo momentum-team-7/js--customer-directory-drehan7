@@ -14,6 +14,7 @@ for (let i = 0; i < customers.length; i++) {
 // takes in an index that correlates to position in object i.e. customers[i]
 function makeAndFillDiv(i) {
     let newDiv = document.createElement("div");
+    newDiv.className = "profile"
 
     let profilePic = document.createElement("img")
     profilePic.src = customers[i].picture.large
